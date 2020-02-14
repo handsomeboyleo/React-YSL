@@ -1,0 +1,12 @@
+*{
+  margin: 0px auto;
+  padding: 0px;
+}
+
+html,body,#root{
+  height: 100%;
+}
+.ant-back-top{
+  right: 5px !important;
+  bottom: 100px !important;
+}

@@ -1,0 +1,180 @@
+
+@keyframes mynotice
+{
+from {top: 0;}
+to {top: -25px;}
+}
+
+.App-nav{
+    width: 100%;
+
+    a{
+        text-decoration: none;
+        font-size: 14px ;
+        color: black;
+    }
+    .Nav-notice{
+        height: 25px;
+        width: 100%;
+        overflow: hidden;
+        background-color: #cb9864;
+        text-align: center;
+        .nno{
+            width: 100%;
+            height: 25px;
+            position: relative;
+            .notice{
+                margin-left: 25%;
+                top: 0px;
+                animation: mynotice 3s;
+                animation-fill-mode: forwards;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                text-align: center;
+                width: 50%;
+                height: 50px;
+                position: absolute;
+                .na{
+                    margin: 0;
+                    width: 100%;
+                    font-size: 18px;
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .Nav-item{
+        height: 175px;
+        width: 100%;
+        .item-content{
+            padding-left:10px ;
+            padding-right: 25px;
+            height: 35px;
+            .c-left{
+                float: left;
+                a{
+                    height: 35px;
+                    line-height: 35px;
+                   color: grey; 
+                   margin-left: 15px;
+                } 
+            }
+            .c-right{
+                .cra{
+                    text-align:right;
+                    float:right;
+                    height: 35px;
+                    line-height: 35px;
+                    margin-left: 15px;
+                   color: black;
+                   .cra_out{
+                       display: none;
+                   }
+                }
+                .cra:hover>.cra_out{
+                    display: block;
+                }
+                float: right;
+            }
+        }
+        .logo{
+            margin-top: 10px;
+            width: 100%;
+            height: 51px;
+            text-align: center;
+            img{
+                width: 283px;
+                height: 51px;
+            }
+        }
+        .Nav-tab{
+            margin-top: 25px;
+            border-top: 1px solid #efeded;
+            border-bottom: 1px solid #efeded;
+            height: 52px;
+            width: 100%;
+            ul{
+                padding-left: 15px;
+                li{
+                    list-style-type: none;
+                    float: left;
+                    margin-right: 20px;
+                    height: 52px;
+                    a{
+                        height: 52px;
+                        line-height: 52px;
+                        font-size: 16px;
+                    }
+                   
+                }
+                 .searchbar{
+                        float: right;
+                        margin:6px;
+                        margin-right: 25px;
+                        height: 52px;
+                        width: 200px;
+                    }
+            }
+            
+            
+        }
+    }
+}
+.signin{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 99;
+    background:rgba(0,0,0,.5);
+    display:none;
+   
+  }
+  .signcontent{
+      width: 50%;
+      height: 50%;
+      top: 25%;
+      margin: 15% auto;
+      opacity: 1;
+      background-color:rgb(255, 255, 255);
+      display: flex;
+  }
+  .s-left{
+    flex:1;
+    height: 100%;
+  }
+  .login{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sp{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 5%;
+    border-bottom: 1px solid grey;
+  }
+  .s-right{
+    flex: 1;
+    height: 100%;
+  }
+  .sinput{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid rgb(129, 129, 129);
+    height: 50px;
+    line-height: 50px;
+  }
+  .signup{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sbtn{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color:white;
+  }
